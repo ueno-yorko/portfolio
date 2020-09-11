@@ -1,0 +1,349 @@
+@charset "utf-8";
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff5f5;
+  background: #8f644c;
+}
+a {
+  color: #fff5f5;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.title {
+  font-size: 58px;
+  font-family: "Beth Ellen", cursive;
+  text-align: center;
+}
+.title:after {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  width: 400px;
+  height: 3px;
+  background-color: #fff5f5;
+  content: "";
+}
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding-right: 60px;
+}
+.header-nav li {
+  margin: 0 20px;
+  margin-top: 77px;
+  margin-bottom: 30px;
+}
+.hero-logo {
+  width: 260px;
+  margin-left: 102px;
+  margin-right: 53px;
+}
+.hero {
+  display: flex;
+  margin-bottom: 96px;
+}
+.philosophy {
+  margin: 0 auto;
+  margin-bottom: 408px;
+}
+.philosophy-text {
+  font-size: 24px;
+  width: 757px;
+  line-height: 3.5rem;
+  margin: 0 auto;
+}
+.button {
+  display: block;
+  width: 163px;
+  text-align: center;
+  margin: 1em auto; /* 前後のスペース */
+  padding: 0.6em 1em; /* 文字周りの余白 */
+  color: #707070; /* テキストカラー */
+  font-size: 18px; /* フォントサイズ */
+  background: #ffffff; /* 背景色 */
+  border-radius: 1px; /* 角の丸み */
+  transition: 0.3s; /* ホバーの変化を滑らかに */
+}
+
+.concept-title {
+  font-size: 30px;
+  padding-top: 75px;
+  margin-bottom: 24px;
+}
+.concept-text {
+  width: 450px;
+}
+
+.concept-item {
+  height: 438px;
+}
+
+.concept-01 {
+  background-image: url("../images/concept01.png"); /* cssから見て階層１個上だから */
+  background-size: cover;
+}
+.concept-item-contents {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+.concept-02 {
+  background-image: url("../images/concept02.png");
+  background-size: cover;
+}
+
+.concept-02 .concept-item-contents {
+  justify-content: flex-start;
+}
+.concept-03 {
+  background-image: url("../images/concept03.png");
+  background-size: cover;
+  margin-bottom: 221px;
+}
+
+/* news */
+.news-image {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 20px;
+}
+.news-contents-contents {
+  display: flex;
+}
+
+.news-contents {
+  width: 970px;
+  margin: 0 auto;
+}
+.news-contents-text {
+  width: 555px;
+  margin-left: 48px;
+}
+
+.news-text {
+  display: flex;
+  height: 170px;
+  border-bottom: 2px solid #ebe1db;
+  margin-left: 40px;
+}
+.title-n {
+  margin-bottom: 86px;
+}
+.news-button {
+  margin-bottom: 262px;
+}
+/* blog */
+.title-b {
+  margin-bottom: 86px;
+}
+.blog-contents p {
+  width: 300px;
+}
+.blog-contents {
+  width: 970px;
+  display: flex;
+  margin: 0 auto;
+}
+.blog-item time {
+  font-size: 20px;
+}
+.blog-contents-title {
+  font-size: 24px;
+  padding: 50px 0 23px;
+}
+
+.blog-01 {
+  display: block;
+  width: 485px;
+  height: 485px;
+  background-image: url("../images/blog01.png");
+  background-size: contain;
+}
+.blog-02 {
+  width: 485px;
+  height: 485px;
+  background-image: url("../images/blog02.png");
+  background-size: contain;
+}
+.blog-03 {
+  width: 485px;
+  height: 485px;
+  background-image: url("../images/blog03.png");
+  background-size: contain;
+}
+.blog-04 {
+  width: 485px;
+  height: 485px;
+  background-image: url("../images/blog04.png");
+  background-size: contain;
+}
+.blog-item {
+  padding: 90px 92px 0 93px;
+}
+.blog-foot {
+  margin-bottom: 83px;
+}
+.blog-button {
+  margin-bottom: 250px;
+}
+
+/* footer */
+.footer-contents {
+  display: block;
+  text-align: center;
+}
+.footer-logo img {
+  width: 133px;
+  height: auto;
+}
+.footer-address {
+  font-size: 14px;
+  margin-bottom: 64px;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 38px;
+}
+.footer-nav a {
+  padding-right: 40px;
+}
+.footer small {
+  display: block;
+  background: #353535;
+  padding: 16px 0 16px 0;
+  text-align: center;
+}
+/* ここからレスポンシブーーーーーーーーーーーーー！ */
+@media (max-width: 750px) {
+  .button {
+    width: 111px;
+    font-size: 14px;
+  }
+  .hero-img {
+    width: 645px;
+    height: 355px;
+  }
+  .hero-logo {
+    width: 48px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .title:after {
+    width: 120px;
+    height: 1px;
+  }
+  .philosophy .title::after {
+    width: 180px;
+  }
+  /* philosophy */
+  .philosophy .title {
+    font-size: 28px;
+  }
+  .philosophy-text {
+    width: 410px;
+    font-size: 14px;
+    line-height: 2rem;
+    margin-bottom: 50px;
+  }
+  .philosophy {
+    margin-bottom: 100px;
+  }
+  /* cocept */
+  .concept-item-contents {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+  .concept-02 .concept-item-contents {
+    justify-content: center;
+  }
+  .concept-item {
+    height: 172px;
+  }
+  .concept-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .concept-text {
+    font-size: 10px;
+    width: 355px;
+  }
+  .concept-03 {
+    margin-bottom: 130px;
+  }
+  /* news */
+  .news-contents-text {
+    width: 222px;
+    /* margin-left: 48px; */
+  }
+  .news-contents {
+    width: 620px;
+    margin: 0 auto;
+  }
+  .news-button {
+    margin-bottom: 196px;
+  }
+  .news-text {
+    display: block;
+  }
+  /* blog */
+  .title-b {
+    margin-bottom: 0;
+  }
+  .blog-img {
+    width: 276px;
+    height: 276px;
+  }
+  .blog-contents {
+    width: 532px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .blog-item {
+    padding: 37px 39px 0 39px;
+  }
+  .blog-item time {
+    font-size: 14px;
+  }
+  .blog-contents-title {
+    font-size: 18px;
+    padding: 12px 0 10px;
+  }
+  .blog-contents p {
+    font-size: 10px;
+    width: 200px;
+  }
+  .blog-foot {
+    margin-bottom: 20px;
+  }
+  /* footer */
+  .footer-logo img {
+    width: 66px;
+  }
+  .footer-contents {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer-address {
+    margin-bottom: 30px;
+  }
+  .footer-nav {
+    display: block;
+  }
+  .footer-nav a {
+    margin-bottom: 30px;
+  }
+}
